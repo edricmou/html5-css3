@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--align:table对齐方式 
+        border:边框粗细
+        cellpadding:文字和单元格的距离
+        cellspacing:单元格和单元格之间的距离
+        width:表格宽度
+        height:表格高度
+    -->
+    <table align="center" border="1" cellpadding="1" cellspacing="0" width="">
+        <thead>
+            <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>男</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>女</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <table align="center" border="1" cellpadding="1" cellspacing="0" width="">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- 跨行合并 rowspan -->
+                    <td rowspan="2">张三</td>
+                    <td>男</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <!-- 跨列合并 colspan -->
+                    <td colspan="2">女</td>
+    
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

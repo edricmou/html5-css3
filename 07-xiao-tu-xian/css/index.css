@@ -1,0 +1,342 @@
+/* 首页样式 */
+.entry {
+    background-color: #F5F5F5;
+    height: 500px;
+}
+
+.category {
+    width: 100%;
+    height: 500px;
+    background: url(../uploads/banner1.png) no-repeat center center;
+
+}
+
+.category ul {
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.42);
+    height: 100%;
+}
+
+.category ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 30px;
+    color: #FFFFFF;
+    height: 50px;
+    line-height: 50px;
+}
+
+.category ul li a {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.category ul li p a:first-child {
+    font-size: 16px;
+}
+
+.category ul li:hover {
+    background-color: #00BE9A;
+}
+
+.fresh .info {
+    height: 137px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fresh .info .left {
+    display: flex;
+    align-items: flex-end;
+    gap: 35px;
+}
+
+.fresh .info .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #A1A1A1;
+}
+
+.fresh .detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fresh .detail div {
+    height: 404px;
+    width: 304px;
+    background-color: #EEF9F4;
+    text-align: center;
+}
+
+.recommend .info {
+    height: 139px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommend .info .left {
+    display: flex;
+    align-items: flex-end;
+    gap: 35px;
+}
+
+.recommend .info .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    color: #A1A1A1;
+}
+
+.recommend .detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommend .detail div {
+    height: 464px;
+    width: 304px;
+    text-align: center;
+}
+
+.hot {
+    height: 468px;
+    background-color: #F5F5F5;
+}
+
+.hot .left {
+    height: 82px;
+    display: flex;
+    align-items: flex-end;
+    gap: 35px;
+}
+
+.hot .right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.hot .detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hot .detail div {
+    height: 468px;
+    width: 244px;
+    text-align: center;
+}
+
+.shengxian {
+    margin-top: 20px;
+    height: 732px;
+}
+
+.shengxian .info {
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shengxian .info .right {
+    gap: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shengxian .info .right ul li a {
+    display: block;
+    height: 20px;
+    padding: 0 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.shengxian .info .right ul li a:hover {
+    background-color: #00BE9A;
+    color: #fff;
+}
+
+
+.shengxian .info .right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shengxian .info .right .btn {
+    gap: 12.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 生鲜商品展示区域 */
+.shengxian .detail {
+    display: flex;
+    gap: 20px;
+}
+
+.shengxian .detail .left {
+    width: 306px;
+    height: 610px;
+}
+
+.shengxian .detail .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shengxian .detail .right {
+    flex: 1;
+}
+
+.shengxian .detail .right ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 305px;
+    gap: 8px;
+}
+
+.shengxian .detail .right ul li {
+    background-color: #fff;
+    padding-top: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.shengxian .detail .right ul li:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.shengxian .detail .right ul li img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.shengxian .detail .right ul li p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.clothing {
+    margin-top: 20px;
+    height: 722px;
+}
+
+.clothing .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+}
+
+.clothing .header .left {
+    font-size: 30px;
+}
+
+.clothing .header .right {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.clothing .header .right ul {
+    display: flex;
+}
+
+.clothing .header .right ul li a {
+    padding: 0 10px;
+    height: 20px;
+    line-height: 20px;
+
+}
+
+.clothing .header .right ul li a:hover {
+    background-color: #00BE9A;
+    color: #fff;
+}
+
+.clothing .header .right .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12.4px;
+}
+
+.clothing .detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clothing .detail .right ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.clothing .detail .right ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 242px;
+    height: 305px;
+    padding: 10px 24px;
+}
+
+.clothing .detail .right ul li a img {
+    width: 200px;
+    height: 180px;
+}
+
+.clothing .detail .right ul li a p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.lastest {
+    height: 497px;
+}
+
+.lastest .header {
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastest .header .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12.5px;
+}
+
+.lastest .detail ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastest .detail ul li .icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}

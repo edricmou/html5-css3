@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0 auto;
+    }
+
+    .box {
+        margin: 30px auto;
+        /* 父容器使用弹性布局 */
+        display: flex;
+        width: 80%;
+        gap: 16px;
+    }
+
+    .box .item {
+        flex: 1;
+    }
+
+    .box .item a {
+        display: block;
+        border-radius: 16px;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 16px;
+        transition: all .4s;
+    }
+
+    .box .item a:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .box .item a img {
+        /* 解决方式1：将图片转换为块级元素 */
+        display: block;
+        /* 解决方式1：将图片的对齐方式设置为非基线对齐 */
+        vertical-align: bottom;
+        width: 100%;
+    }
+</style>
+
+<body>
+
+    <div class="box">
+        <div class="item">
+            <a href=""><img src="./img/c1.webp" alt=""></a>
+            <a href=""><img src="./img/c2.webp" alt=""></a>
+            <a href=""><img src="./img/c3.webp" alt=""></a>
+            <a href=""><img src="./img/c4.webp" alt=""></a>
+            <a href=""><img src="./img/c5.webp" alt=""></a>
+            <a href=""><img src="./img/c6.webp" alt=""></a>
+            <a href=""><img src="./img/c7.webp" alt=""></a>
+            <a href=""><img src="./img/c8.webp" alt=""></a>
+            <a href=""><img src="./img/c9.webp" alt=""></a>
+        </div>
+        <div class="item">
+            <a href=""><img src="./img/c2-1.webp" alt=""></a>
+            <a href=""><img src="./img/c2-2.webp" alt=""></a>
+            <a href=""><img src="./img/c2-3.webp" alt=""></a>
+            <a href=""><img src="./img/c2-4.webp" alt=""></a>
+            <a href=""><img src="./img/c2-5.webp" alt=""></a>
+            <a href=""><img src="./img/c2-6.webp" alt=""></a>
+            <a href=""><img src="./img/c2-7.webp" alt=""></a>
+            <a href=""><img src="./img/c2-8.webp" alt=""></a>
+            <a href=""><img src="./img/c2-9.webp" alt=""></a>
+        </div>
+        <div class="item">
+            <a href=""><img src="./img/c3-1.webp" alt=""></a>
+            <a href=""><img src="./img/c3-2.webp" alt=""></a>
+            <a href=""><img src="./img/c3-3.webp" alt=""></a>
+            <a href=""><img src="./img/c3-4.webp" alt=""></a>
+            <a href=""><img src="./img/c3-5.webp" alt=""></a>
+            <a href=""><img src="./img/c3-6.webp" alt=""></a>
+            <a href=""><img src="./img/c3-7.webp" alt=""></a>
+            <a href=""><img src="./img/c3-8.webp" alt=""></a>
+            <a href=""><img src="./img/c3-9.webp" alt=""></a>
+        </div>
+        <div class="item">
+            <a href=""><img src="./img/c4-1.webp" alt=""></a>
+            <a href=""><img src="./img/c4-2.webp" alt=""></a>
+            <a href=""><img src="./img/c4-3.webp" alt=""></a>
+            <a href=""><img src="./img/c4-4.webp" alt=""></a>
+            <a href=""><img src="./img/c4-5.webp" alt=""></a>
+            <a href=""><img src="./img/c4-6.webp" alt=""></a>
+            <a href=""><img src="./img/c4-7.webp" alt=""></a>
+            <a href=""><img src="./img/c4-8.webp" alt=""></a>
+            <a href=""><img src="./img/c4-9.webp" alt=""></a>
+        </div>
+        <div class="item">
+            <a href=""><img src="./img/c5-1.webp" alt=""></a>
+            <a href=""><img src="./img/c5-2.webp" alt=""></a>
+            <a href=""><img src="./img/c5-3.webp" alt=""></a>
+            <a href=""><img src="./img/c5-4.webp" alt=""></a>
+            <a href=""><img src="./img/c5-5.webp" alt=""></a>
+            <a href=""><img src="./img/c5-6.webp" alt=""></a>
+            <a href=""><img src="./img/c5-7.webp" alt=""></a>
+            <a href=""><img src="./img/c5-8.webp" alt=""></a>
+            <a href=""><img src="./img/c5-9.webp" alt=""></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

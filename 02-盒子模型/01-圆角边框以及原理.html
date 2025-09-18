@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            /* 如果想实现画圆，width必须与height相等 */
+            width: 200px;
+            height: 200px;
+            margin: auto auto;
+            background-color: red;
+            /* 如果想实现画圆，将border-radius设置为50% */
+            border-radius: 50%;
+        }
+
+        .blue {
+            width: 200px;
+            height: 100px;
+            background-color: #00a4ff;
+            margin: auto auto;
+            /* 如果想实现横向胶囊块，将border-radius设置为width的一半 */
+            border-radius: 100px;
+        }
+
+        .green {
+            width: 100px;
+            height: 200px;
+            background-color: #00a4ff;
+            margin: auto auto;
+            /* 如果想实现竖向胶囊块，将border-radius设置为height的一半 */
+            border-radius: 100px;
+        }
+
+        .gray {
+            width: 100px;
+            height: 200px;
+            background-color: gray;
+            margin: auto auto;
+            /* 左上右下20px，右上左下50px*/
+            border-radius: 20px 50px;
+            /* 左上20px，右上左下50px，右下35px */
+            border-radius: 20px 50px 35px;
+            /* 左上20px，右上50px，右下35px 左下0*/
+            border-radius: 20px 50px 35px 0px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="red">
+</div>
+
+<div class="blue">
+</div>
+
+<div class="green">
+</div>
+
+<div class="gray">
+</div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标准流display</title>
+</head>
+
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+        padding: 0;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .xiaomi a {
+        color: black;
+        line-height: 40px;
+        padding: 0 0 0 10px;
+        /* a标签本来是行内元素，使用display: block可以将行内元素转为块元素，这样a元素就可以拥有宽高且都不在一行显示 */
+        display: block;
+        width: 200px;
+        height: 40px;
+        list-style: none;
+        background: #9D9A9B;
+        transition: all 0.2s;
+    }
+
+    .xiaomi a:hover {
+        background: #FF6700;
+    }
+
+    .border {
+        border: 1px solid #FFC0CA;
+        width: 400px;
+        height: 400px;
+    }
+
+    .border {
+        /* <a>标签之间是有一个小空格的，给父类加font-size=0，可以让空格消失 */
+        font-size: 0;
+    }
+
+    .border a {
+        margin: 8px 6px;
+        color: white;
+        /* inline-block让元素既可以设置宽高，右可以在一行显示 */
+        display: inline-block;
+        height: 30px;
+        background: #cccccc;
+        line-height: 30px;
+        padding: 4px 14px;
+        border-radius: 6px;
+        transition: all 0.4s;
+    }
+
+    .border a:hover {
+        color: #FF6700;;
+        transform: translateY(-2px);
+    }
+</style>
+<body>
+<div class="xiaomi">
+    <a href="">手机</a>
+    <a href="">平板</a>
+    <a href="">智能穿戴</a>
+    <a href="">智能电视</a>
+    <a href="">智能音箱</a>
+</div>
+
+<div class="border">
+    <a href="">风景图</a>
+    <a href="">壁纸</a>
+    <a href="">大好河山</a>
+    <a href="">点击我试试</a>
+    <a href="">试试我就试试</a>
+</div>
+</body>
+</html>

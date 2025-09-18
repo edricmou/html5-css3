@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('./fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 公共样式文件 */
+
+.w {
+    /* 版心 1200px */
+    width: 1200px;
+    /* 自动居中 */
+    margin: 0 auto;
+}
+
+
+/* 快捷导航 */
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.arrow-icon::after {
+    content: '∨';
+    margin-left: 4px;
+}
+
+
+.fl {
+    float: left;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.fr ul li {
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+/* header头部 */
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    font-size: 0;
+    background: url("../image/logo.png") no-repeat;
+}
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+.search input {
+    float: left;
+    height: 32px;
+    width: 454px;
+    padding-left: 10px;
+}
+
+.search button {
+    width: 80px;
+    height: 32px;
+    float: left;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin: 10px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    background-color: #f7f7f7;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+}
+
+.shopcar a::after {
+    content: '>';
+    margin-left: 8px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    border-radius: 7px 7px 7px 0;
+    padding: 0 5px;
+}
+
+.nav {
+    height: 47px;
+    border-bottom: #b1191a 2px solid;
+}
+
+.dropdown {
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+}
+
+.dropdown .dd {
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+}
+
+.dropdown .dd ul li {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 10px;
+}
+
+.dropdown .dd ul a {
+    color: #fff;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: #fff;
+    color: #c81623;
+}
+
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+.dropdown .dd ul li::after {
+    position: absolute;
+    right: 10px;
+    content: '>';
+}
+
+.navitems ul li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+}
+
+.navitems ul li a {
+    padding: 0 25px;
+    font-size: 16px;
+}
+
+.footer {
+    padding-top: 30px;
+    height: 415px;
+    background-color: #f1f1f1;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    float: left;
+    width: 300px;
+    height: 50px;
+    padding-left: 35px;
+}
+
+.mod_service ul li h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url("/image/zhengping.png") no-repeat -252px -2px;
+    margin-right: 8px;
+}
+
+.service_txt h4 {
+    font-size: 14px;
+}
+
+.service_txt p {
+    font-size: 12px;
+}
+
+.mod_help {
+    padding-top: 20px;
+    padding-left: 50px;
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl:last-child {
+    float: left;
+    width: 90px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.mod_help dl dd {
+    font-size: 12px;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-bottom: 15px;
+}

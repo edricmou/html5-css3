@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+
+    * {
+        margin: 0 auto;
+    }
+
+    .header {
+        /*overflow清除浮动*/
+        overflow: hidden;
+        width: 500px;
+    }
+
+    .son1 {
+        float: left;
+        background: skyblue;
+        width: 250px;
+        height: 250px;
+    }
+
+    .son2 {
+        float: left;
+        background: orange;
+        width: 250px;
+        height: 250px;
+    }
+
+    .content {
+        background: black;
+        width: 800px;
+        height: 200px;
+    }
+
+    /*单伪元素清除浮动*/
+    /*.clearfix:after {*/
+    /*    visibility: hidden;*/
+    /*    clear: both;*/
+    /*    display: block;*/
+    /*    content: "";*/
+    /*    height: 0;*/
+    /*}*/
+
+    /*双伪元素清除浮动*/
+    /*.clearfix:before, .clearfix:after {*/
+    /*    content: "";*/
+    /*    display: table;*/
+    /*}*/
+
+    /*.clearfix:after {*/
+    /*    clear: both;*/
+    /*}*/
+
+    /*.clearfix {*/
+    /*    clear: both;*/
+    /*}*/
+</style>
+
+<body>
+<!-- 父元素添加伪元素clearfix -->
+<div class="header clearfix">
+    <div class="son1">
+
+    </div>
+    <div class="son2">
+
+    </div>
+
+    <!--  添加一个块级的兄弟们标签，对这个兄弟标签设置属性clear: both;，去除浮动  -->
+    <div class="clearfix"></div>
+</div>
+<div class="content">
+
+</div>
+</body>
+</html>

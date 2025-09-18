@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+
+
+    .father {
+        display: flex;
+        /* -A--B--C-对齐 */
+        justify-content: space-around;
+        /* 顶部对齐 */
+        align-items: flex-start;
+        /* 底部对齐 */
+        align-items: flex-end;
+        /* 项目拉伸填充整个容器高度（需子项目无固定高度） */
+        align-items: stretch;
+        /* 居中对齐 */
+        align-items: center;
+        border: 1px solid #ff5000;
+        height: 400px;
+        width: 1000px;
+    }
+
+    .son {
+        width: 200px;
+        height: 200px;
+        background: pink;
+    }
+</style>
+<body>
+
+<div class="father">
+    <div class="son">
+
+    </div>
+    <div class="son">
+
+    </div>
+    <div class="son">
+
+    </div>
+    <div class="son">
+
+    </div>
+</div>
+</body>
+</html>

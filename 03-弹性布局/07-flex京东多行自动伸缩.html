@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    /* 给box设置一个父盒子，来让整个box进行居中，方便box盒子设置了margin: 0 -8px; 后，不会塌陷 */
+    .w {
+        width: 80%;
+        border: 1px solid pink;
+        margin: 0 auto;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        /* 使用-8px来消除最左边和最右边8px的margin */
+        margin: 0 -8px;
+    }
+
+    .box .item {
+        /* 每个项目左右各8px的margin，底部16px的margin */
+        margin: 0 8px 16px;
+        /* 每个项目左右各8px的margin，实际上增加了16px，所以每个项目的宽度是16.66666% - 16px，如果不剪掉这个值，会有塌陷问题 */
+        flex: 0 0 calc(16.66666% - 16px);
+        height: 200px;
+        background: pink;
+        border: 1px solid #000;
+    }
+
+    .footer {
+        margin: 0 auto;
+        width: 80%;
+        height: 200px;
+        background: black;
+    }
+</style>
+
+<body>
+    <div class="w">
+        <div class="box">
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

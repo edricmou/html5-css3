@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景渐变</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        div {
+            width: 500px;
+            height: 200px;
+            /* 90deg：渐变方向， 10%：从渐变起始位置10%开始渐变，一直渐变到80%为止，80%以后都是纯mediumpurple色 */
+            background: linear-gradient(90deg, skyblue 10%, mediumpurple 80%);
+        }
+
+
+        p {
+            letter-spacing: 20px;
+            font-size: 60px;
+            text-align: center;
+            background-image: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+            /* 指定背景的绘制区域限制在文字的轮廓范围内 */
+            background-clip: text;
+            /* 将文字本身的颜色设置为透明 */
+            -webkit-text-fill-color: transparent;
+        }
+        span {
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+
+</div>
+<p>为<span>Apple</span>智能预备好</p>
+</body>
+
+</html>

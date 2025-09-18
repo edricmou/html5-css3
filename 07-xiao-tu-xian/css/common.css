@@ -1,0 +1,179 @@
+/* 公共样式 */
+.w {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.shortcut {
+    width: 100%;
+    height: 52px;
+    background-color: #333333;
+}
+
+
+.shortcut ul {
+    height: 52px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.shortcut ul li a {
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: all 0.1s ease-in-out;
+}
+
+.shortcut ul li a:hover {
+    color: #5EB69C;
+}
+
+.shortcut ul li:first-child a {
+    color: #5EB69C;
+}
+
+.shortcut ul .line {
+    width: 0.5px;
+    height: 12px;
+    background-color: #999;
+    margin: 0 15px;
+}
+
+.header {
+    height: 132px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 200px;
+    height: 88px;
+}
+
+.header .logo h1 {
+    /* 针对搜索引擎优化 */
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/logo.png);
+}
+
+.header .nav ul {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    line-height: 88px;
+    gap: 48px;
+}
+
+.header .nav ul li {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.header .nav li:hover {
+    border-bottom: 2px solid #5EB69C;
+}
+
+.header .nav li a:hover {
+    color: #5EB69C;
+}
+
+.search {
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.search input {
+    padding-left: 28px;
+}
+
+.search input::placeholder {
+    color: #ccc;
+}
+
+.car i {
+    font-size: 24px;
+    margin-right: 24px;
+}
+
+.footer {
+    background-color: #F5F5F5;
+    height: 580px;
+}
+
+.footer .slogoan {
+    width: 100%;
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.footer ul {
+    height: 178px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .slogoan ul li {
+    display: flex;
+    align-items: center;
+}
+
+.footer .slogoan ul li p {
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+.service {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-left {
+    gap: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.service dt {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.service dd {
+    font-size: 16px;
+    color: #969696;
+    margin-bottom: 10.5px;
+}
+
+.service-right ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.service-right ul p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.copyright , .copyright a{
+    margin-top: 100.5px;
+    text-align: center;
+    color: #969696;
+    font-size: 16px;
+}

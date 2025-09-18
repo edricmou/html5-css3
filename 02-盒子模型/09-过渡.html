@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡</title>
+    <style>
+
+        * {
+            margin: auto;
+            margin-top: 80px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        div {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(90deg, skyblue, mediumpurple);
+            /* 可能控制所有动画的过渡时间 而不是马上打开 这里是0.5s内完成平滑过渡 */
+            transition: all .5s;
+        }
+
+        div:hover {
+            /*
+            2px: x轴偏移量
+            4px: y轴偏移量
+            20px: 阴影的模糊半径 值越大，阴影边缘越模糊；值为 0 时，阴影边缘清晰锐利
+            10px: 阴影的扩展半径 正值会使阴影扩大（向四周延伸），负值会使阴影收缩
+            rgba(0, 0, 0, 0.1): 阴影颜色
+            */
+            box-shadow: 2px 4px 20px 10px rgba(0, 0, 0, 0.4);
+            /* hover时，垂直方向上移动元素 */
+            transform: translateY(-10px);
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div>
+
+</div>
+
+</body>
+
+</html>
